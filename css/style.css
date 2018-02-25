@@ -11,6 +11,7 @@ html, body{
     margin:0px;
 
 }
+
 li >a{
     color:#777777;
     text-decoration:none;
@@ -24,12 +25,12 @@ a:hover{
 
 .wrapper{
     min-height:100%;
-
+    display:flex;
+    flex-direction:column;
 }
 
 .wrapper:after{
     content:"";
-    display:block;
 }
 
 .wrapper:after,
@@ -124,6 +125,17 @@ header {
     float:right;
 }
 
+.sidebar-index{
+    background-color:#ffffff;
+    height:100px;
+    width: 270px;
+    text-align:center;
+    display:inline-block;
+    position:absolute;
+    margin:-480px 60px 200px 700px;
+    float:right;
+}
+
 
 nav{
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -143,12 +155,12 @@ nav{
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#777777;
     width: 650px;
-    margin-left: 100px;
     position:relative;
     padding:0;
+    align-self:auto;
 }
 
-.main-section-port{
+.main-section-contact{
     border-style:1 px solid #dddddd;
     background-color: #ffffff;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -193,7 +205,9 @@ div>img {
 
 .row{
     display:flex;
+    flex-direction:row;
     flex-wrap:wrap;
+    
 }
 
 .first {
@@ -327,22 +341,65 @@ footer {
 }
 
 /*contact page*/
-.main-section-port{
-    margin:30px 10px 10px 100px;
-    width:350px;
+.main-section-contact{
+    margin:30px 10px 10px 150px;
+    width:360px;
+    padding:10px;
 }
 
 }
 
 /*if device width is less than or equal to 768*/
 @media screen and (max-width:768px){
+/*test 
     p{
   color:tomato;
-    }
+    }    
+*/ 
+
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    flex-flow:column wrap;
+    margin-bottom:20px;
+    
+}
+
+.main-section{
+    margin-left:5px;
+    width:99%;
+    align-self: center;
+}
+
+.sidebar-index{
+    margin:-4px 5px;
+    width:99%;
+    height:115px;
+    align-self: center;
+
+}
+.icon-bar{
+    margin:-6px 200px 10px 231px;
+}
+
+.footer{
+    margin-top:30px;
+    height: 60px;
+}
+
+.index-pic{
+    display:flex;
+}
+
+.biotext{
+    text-align:left;
+}
+
 }
 
 /*if device width is less than or equal to 640*/
 @media screen and (max-width:640px){
+/*test*/
     p{
         color:aqua;
     }
