@@ -181,7 +181,7 @@ div>img {
     position:relative;
     opacity: 1;
     font-size: 14px;
-    font-family:font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     width: 225px;
     height:30px;
     margin-top:100px;
@@ -273,7 +273,7 @@ footer {
     p{
         color:purple;
     }
-*/ 
+*/
 
 /*main styles*/
     .main-section{
@@ -329,11 +329,10 @@ footer {
     flex:25%;
     max-width:75%;
     padding:5px;
-   
 }
+
 .first img{
     vertical-align: middle;
-   
 }
 
 .second img{
@@ -356,13 +355,13 @@ footer {
   color:tomato;
     }    
 */ 
+/*index*/
 
 .wrapper{
     display:flex;
     flex-direction:column;
     flex-flow:column wrap;
     margin-bottom:20px;
-    
 }
 
 .main-section{
@@ -371,7 +370,7 @@ footer {
     align-self: center;
 }
 
-.sidebar-index{
+.sidebar{
     margin:-4px 5px;
     width:99%;
     height:115px;
@@ -381,11 +380,10 @@ footer {
 .icon-bar{
     margin:-6px 200px 10px 231px;
 }
-
-.footer{
-    margin-top:30px;
-    height: 60px;
+.wrapper:after{
+    height:auto;
 }
+
 
 .index-pic{
     display:flex;
@@ -393,6 +391,40 @@ footer {
 
 .biotext{
     text-align:left;
+}
+
+/*portfolio*/
+.row{
+    display:inline-block;
+    margin-left:50px;
+}
+
+.first{
+    max-width:50%;
+    padding:5px;
+    float:left;
+}
+
+.second{
+    max-width:50%;
+    padding:5px;
+    float:right;
+}
+
+.first img{
+    vertical-align: middle;
+}
+
+.second img{
+    vertical-align: middle;
+}
+
+
+.sidebar{
+    margin:10px 5px;
+    width:99%;
+    height:115px;
+    align-self: center;
 }
 
 }
